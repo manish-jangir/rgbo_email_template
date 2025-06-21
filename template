@@ -1,258 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Official Email Template - The New India Assurance Co. Ltd.</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background-color: #ffffff;
-      padding: 20px;
-      border: 1px solid #ddd;
-    }
-
-    .header {
-      background-color: #002e6d;
-      padding: 15px;
-      text-align: center;
-    }
-
-    .logo {
-      max-width: 200px; /* Adjusted for new logo dimensions */
-      height: auto; /* Maintain aspect ratio */
-    }
-
-    /* .company-name rules removed as element is no longer present */
-
-    .content {
-      padding: 20px 0;
-    }
-
-    .footer {
-      background-color: #f4f4f4;
-      padding: 20px;
-      font-size: 14px;
-      color: #555;
-      text-align: center;
-    }
-
-    .product-section legend {
-      font-weight: 600;
-      font-family: Poppins, sans-serif;
-      color: #083f83;
-      margin-bottom: 10px;
-    }
-
-    .insurance_icons {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin: 0;
-    }
-
-    .insurance_icons li {
-      text-align: center;
-      width: 90px;
-    }
-
-    .insurance_icons img {
-      width: 51px;
-      height: 51px;
-      margin-bottom: 5px;
-    }
-
-    .insurance_icons p {
-      margin: 0;
-      font-weight: bold;
-      font-size: 14px;
-      color: #000;
-    }
-
-    .social-icons a img {
-      width: 24px;
-      height: 24px; /* Ensure height is also set for better scaling */
-      margin: 0 5px;
-    }
-
-    /* Responsive adjustments */
+    /* --- Responsive Adjustments --- */
     @media screen and (max-width: 600px) {
-      .container {
+      .container-table {
         width: 100% !important;
-        padding: 10px !important;
-        border: none !important; /* Remove border on small screens if desired */
+        border-left: none !important; /* Remove side borders on mobile */
+        border-right: none !important;
       }
-
-      .header {
-        padding: 10px;
+      .logo-img {
+        max-width: 160px !important; /* Resize logo */
+        height: auto !important;
       }
-
-      .logo {
-        max-width: 160px; /* Adjusted for new logo on medium screens */
+      .content-cell {
+        padding: 15px 10px !important; /* Reduce padding in content area */
       }
-
-      /* .company-name rules removed */
-
-      .content {
-        padding: 15px 0;
+      .footer-cell {
+        padding: 15px 10px !important; /* Reduce padding in footer */
+        font-size: 13px !important; /* Slightly smaller base font for footer */
       }
-
-      .insurance_icons {
-        flex-direction: row; /* Keep as row but allow wrapping */
-        justify-content: space-around; /* Better spacing for wrapped items */
-        gap: 15px; /* Adjust gap */
+      .product-section-legend-text {
+         font-size: 1.1em !important; /* Adjust legend font size */
       }
-
-      .insurance_icons li {
-        width: 75px; /* Adjust width for better wrapping */
+      .insurance_icons_table td { /* Stack insurance product icons */
+        display: block !important;
+        width: 100% !important; /* Make cell full width to stack */
+        padding: 8px 0 !important; /* Adjust padding for stacked items */
+        text-align: center !important;
       }
-
-      .insurance_icons img {
-        width: 40px; /* Smaller icons on mobile */
-        height: 40px;
+      .insurance-icon-img {
+        width: 40px !important; /* Smaller product icons */
+        height: 40px !important;
       }
-
-      .insurance_icons p {
-        font-size: 12px; /* Smaller text for icons */
+      .insurance-icon-text {
+        font-size: 12px !important; /* Smaller text for product icons */
       }
-
-      .footer {
-        padding: 15px;
-        font-size: 12px;
+      .social-icon-img {
+        width: 28px !important; /* Resize social icons */
+        height: 28px !important;
       }
-
-      .social-icons a img {
-        width: 28px; /* Adjust social icon size for mobile if they are too small/large */
-        height: 28px;
-        margin: 0 3px; /* Adjust margin */
-      }
-
-      .product-section legend {
-        font-size: 1.1em; /* Adjust legend font size */
+      .footer-details p { /* Reduce margin for footer details on mobile */
+        margin-bottom: 3px !important;
+        margin-left: 5px !important; /* Add some indent for readability */
+        margin-right: 5px !important;
       }
     }
 
     @media screen and (max-width: 400px) {
-      .logo {
-        max-width: 140px; /* Further adjust logo for very small screens */
+      .logo-img {
+        max-width: 140px !important; /* Further resize logo for very small screens */
+        height: auto !important;
       }
-      .insurance_icons {
-         flex-direction: column; /* Stack them for very small screens */
-         align-items: center;
+      .content-cell {
+        font-size: 13px !important; /* Slightly smaller content text */
+        padding: 10px 5px !important; /* Further reduce padding */
       }
-      .insurance_icons li {
-        width: 100%; /* Full width when stacked */
-        margin-bottom: 10px;
+      .footer-cell {
+        padding: 10px 5px !important; /* Further reduce padding */
       }
-       .social-icons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+      .social-icon-img { /* Make social icons a bit larger for easier tapping */
+        width: 32px !important;
+        height: 32px !important;
+        margin: 0 2px !important; /* Adjust spacing if needed */
       }
-      .social-icons a img {
-        width: 32px;
-        height: 32px;
-        margin: 5px;
+       .insurance_icons_table td { /* Adjust padding for very small screens */
+        padding: 10px 0 !important;
       }
-      .header a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none; /* Remove underline from link */
+      .product-section-legend-text {
+         font-size: 1em !important; /* Further adjust legend font size */
+      }
+      .insurance-icon-text {
+        font-size: 11px !important; /* Further smaller text for product icons */
+      }
+      .footer-details {
+        font-size: 9px !important; /* Smaller footer details text */
       }
     }
-
   </style>
 </head>
+<body style="font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0; background-color: #f5f5f5;">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #f5f5f5;">
+    <tr>
+      <td align="center" style="padding: 0;">
+        <table class="container-table" width="600" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: #ffffff; margin: auto; border: 1px solid #ddd;">
+          <!-- Header Row -->
+          <tr>
+            <td class="header-cell" style="background-color: #002e6d; padding: 15px; text-align: center;">
+              <a href="https://www.newindia.co.in" style="text-decoration: none;">
+                <img class="logo-img" src="https://www.newindia.co.in/assets/images/NIA_logo.png" alt="The New India Assurance Co. Ltd. Logo" width="200" height="68" style="max-width: 200px; height: auto; border: 0; display: block; margin: 0 auto;">
+              </a>
+            </td>
+          </tr>
+          <!-- Content Row -->
+          <tr>
+            <td class="content-cell" style="padding: 20px; color: #333; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+              <p style="margin: 0 0 10px 0;">Dear Sir/Madam,</p>
+              <p style="margin: 0 0 10px 0;">[Write your message content here]</p>
+              <p style="margin: 0;">Regards,<br>The New India Assurance Co. Ltd.</p>
+            </td>
+          </tr>
+          <!-- Footer Row -->
+          <tr>
+            <td class="footer-cell" style="background-color: #f4f4f4; padding: 20px; font-size: 14px; color: #555; text-align: center;">
+              <p class="product-section-legend-text" style="font-weight: 600; font-family: Poppins, sans-serif; color: #083f83; margin-top:0; margin-bottom: 15px; font-size: 16px; text-align:center;">What Are You Securing Today?</p>
 
-<body>
-  <div class="container">
-    <div class="header">
-      <a href="https://www.newindia.co.in">
-        <img class="logo" src="https://www.newindia.co.in/assets/images/NIA_logo.png" alt="The New India Assurance Co. Ltd. Logo">
-      </a>
-    </div>
+              <!-- Insurance Icons Table -->
+              <table class="insurance_icons_table" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px; text-align:center;">
+                <tr>
+                  <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
+                    <a href="https://www.newindia.co.in/portal/product/motor" style="color: #083f83; text-decoration: none;">
+                      <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/motor.png" alt="Motor" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
+                      <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">Motor</p>
+                    </a>
+                  </td>
+                  <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
+                    <a href="https://www.newindia.co.in/portal/product/health" style="color: #083f83; text-decoration: none;">
+                      <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/health.png" alt="Health" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
+                      <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">Health</p>
+                    </a>
+                  </td>
+                  <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
+                    <a href="https://www.newindia.co.in/portal/product/travel" style="color: #083f83; text-decoration: none;">
+                      <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/travel.png" alt="Travel" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
+                      <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">Travel</p>
+                    </a>
+                  </td>
+                  <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
+                    <a href="https://www.newindia.co.in/portal/product/miscellaneous" style="color: #083f83; text-decoration: none;">
+                      <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/misc.png" alt="Miscellaneous" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
+                      <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">Misc.</p>
+                    </a>
+                  </td>
+                  <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
+                    <a href="https://www.newindia.co.in/portal/product/all" style="color: #083f83; text-decoration: none;">
+                      <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/allprod.png" alt="All Products" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
+                      <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">All Products</p>
+                    </a>
+                  </td>
+                </tr>
+              </table>
 
-    <div class="content">
-      <p>Dear Sir/Madam,</p>
+              <!-- Social Icons Table -->
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:20px; text-align:center;">
+                <tr>
+                  <td align="center" style="padding: 0 3px;">
+                    <a href="https://www.facebook.com/thenewindiaassurance"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24" style="border:0; display:block;"></a>
+                  </td>
+                  <td align="center" style="padding: 0 3px;">
+                    <a href="https://twitter.com/NewIndAssurance"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24" height="24" style="border:0; display:block;"></a>
+                  </td>
+                  <td align="center" style="padding: 0 3px;">
+                    <a href="https://www.instagram.com/thenewindiaassurance/"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="24" height="24" style="border:0; display:block;"></a>
+                  </td>
+                  <td align="center" style="padding: 0 3px;">
+                    <a href="https://www.linkedin.com/company/the-new-india-assurance-co-ltd-/"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="24" height="24" style="border:0; display:block;"></a>
+                  </td>
+                  <td align="center" style="padding: 0 3px;">
+                    <a href="https://www.youtube.com/channel/UCZJuDCfxqfHKzAGGrRB7ofw"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="24" height="24" style="border:0; display:block;"></a>
+                  </td>
+                  <td align="center" style="padding: 0 3px;">
+                    <a href="https://www.threads.net/@thenewindiaassurance"><img class="social-icon-img" src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/threads-512.png" alt="Threads" width="24" height="24" style="border:0; display:block;"></a>
+                  </td>
+                </tr>
+              </table>
 
-      <p>[Write your message content here]</p>
+              <p style="margin-top: 20px; margin-bottom: 20px; font-size: 12px; color: #555;">Visit us: <a href="https://www.newindia.co.in" style="color: #002e6d; text-decoration: none;">www.newindia.co.in</a></p>
 
-      <p>Regards,<br>The New India Assurance Co. Ltd.</p>
-    </div>
-
-    <div class="footer">
-      <fieldset class="product-section">
-        <legend>What Are You Securing Today?</legend>
-        <ul class="insurance_icons">
-          <li><a href="https://www.newindia.co.in/portal/product/motor">
-              <img src="https://www.newindia.co.in/assets/images/icons/homepage/motor.png" alt="Motor">
-              <p>Motor</p>
-            </a></li>
-          <li><a href="https://www.newindia.co.in/portal/product/health" style="color: #083f83; text-decoration: none;">
-              <img src="https://www.newindia.co.in/assets/images/icons/homepage/health.png" alt="Health">
-              <p>Health</p>
-            </a></li>
-          <li><a href="https://www.newindia.co.in/portal/product/travel" style="color: #083f83; text-decoration: none;">
-              <img src="https://www.newindia.co.in/assets/images/icons/homepage/travel.png" alt="Travel">
-              <p>Travel</p>
-            </a></li>
-          <li><a href="https://www.newindia.co.in/portal/product/miscellaneous" style="color: #083f83; text-decoration: none;">
-              <img src="https://www.newindia.co.in/assets/images/icons/homepage/misc.png" alt="Miscellaneous">
-              <p>Misc.</p>
-            </a></li>
-          <li><a href="https://www.newindia.co.in/portal/product/all" style="color: #083f83; text-decoration: none;">
-              <img src="https://www.newindia.co.in/assets/images/icons/homepage/allprod.png" alt="All Products">
-              <p>All Products</p>
-            </a></li>
-        </ul>
-      </fieldset>
-
-      <div class="social-icons">
-        <a href="https://www.facebook.com/thenewindiaassurance">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-        </a>
-        <a href="https://twitter.com/NewIndAssurance">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-        </a>
-        <a href="https://www.instagram.com/thenewindiaassurance/">
-          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
-        </a>
-        <a href="https://www.linkedin.com/company/the-new-india-assurance-co-ltd-/">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.youtube.com/channel/UCZJuDCfxqfHKzAGGrRB7ofw">
-          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
-        </a>
-        <a href="https://www.threads.net/@thenewindiaassurance">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Threads_%28app%29_logo.svg" alt="Threads">
-        </a>
-      </div>
-
-      <p style="margin-top: 20px;">Visit us: <a href="https://www.newindia.co.in" style="color: #002e6d;">www.newindia.co.in</a></p>
-
-      <div class="footer-details" style="margin-top: 20px; font-size: 10px; color: #555; line-height: 1.5;">
-        <p>Registered Office Address: The New India Assurance Co. Ltd., #87, M.G.Road, Fort, Mumbai 400 001.</p>
-        <p>CIN Number: L66000MH1919GOI000526 | IRDAI Registration Number: 190</p>
-        <p>'Insurance Is The Subject Matter Of Solicitation'</p>
-        <p>© 2024 The New India Assurance Co Ltd. All Rights Reserved.</p>
-      </div>
-    </div>
-  </div>
+              <div class="footer-details" style="margin-top: 20px; font-size: 10px; color: #555; line-height: 1.5; text-align:center;">
+                <p style="margin:0 0 5px 0;">Registered Office Address: The New India Assurance Co. Ltd., #87, M.G.Road, Fort, Mumbai 400 001.</p>
+                <p style="margin:0 0 5px 0;">CIN Number: L66000MH1919GOI000526 | IRDAI Registration Number: 190</p>
+                <p style="margin:0 0 5px 0;">'Insurance Is The Subject Matter Of Solicitation'</p>
+                <p style="margin:0;">© 2024 The New India Assurance Co Ltd. All Rights Reserved.</p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
-
 </html>
