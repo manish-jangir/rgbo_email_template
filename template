@@ -13,7 +13,7 @@
         border-right: none !important;
       }
       .logo-img {
-        max-width: 160px !important; /* Resize logo */
+        max-width: 220px !important; /* Resize logo for medium screens */
         height: auto !important;
       }
       .content-cell {
@@ -27,7 +27,7 @@
          font-size: 1.1em !important; /* Adjust legend font size */
       }
       .insurance_icons_table td { /* Stack insurance product icons */
-        display: block !important; 
+        display: block !important;
         width: 100% !important; /* Make cell full width to stack */
         padding: 8px 0 !important; /* Adjust padding for stacked items */
         text-align: center !important;
@@ -40,8 +40,8 @@
         font-size: 12px !important; /* Smaller text for product icons */
       }
       .social-icon-img {
-        width: 28px !important; /* Resize social icons */
-        height: 28px !important;
+        width: 30px !important; /* Resize social icons for medium screens */
+        height: 30px !important;
       }
       .footer-details p { /* Reduce margin for footer details on mobile */
         margin-bottom: 3px !important;
@@ -52,7 +52,7 @@
 
     @media screen and (max-width: 400px) {
       .logo-img {
-        max-width: 140px !important; /* Further resize logo for very small screens */
+        max-width: 200px !important; /* Resize logo for small screens */
         height: auto !important;
       }
       .content-cell {
@@ -63,12 +63,12 @@
         padding: 10px 5px !important; /* Further reduce padding */
       }
       .social-icon-img { /* Make social icons a bit larger for easier tapping */
-        width: 32px !important; 
+        width: 32px !important;
         height: 32px !important;
         margin: 0 2px !important; /* Adjust spacing if needed */
       }
        .insurance_icons_table td { /* Adjust padding for very small screens */
-        padding: 10px 0 !important; 
+        padding: 10px 0 !important;
       }
       .product-section-legend-text {
          font-size: 1em !important; /* Further adjust legend font size */
@@ -90,53 +90,51 @@
           <!-- Header Row -->
           <tr>
             <td class="header-cell" style="background-color: #002e6d; padding: 15px; text-align: center;">
-              <a href="https://www.newindia.co.in" style="text-decoration: none;">
-                <img class="logo-img" src="https://www.newindia.co.in/assets/images/NIA_logo.png" alt="The New India Assurance Co. Ltd. Logo" width="200" height="68" style="max-width: 200px; height: auto; border: 0; display: block; margin: 0 auto;">
+              <a href="https://www.newindia.co.in" style="text-decoration: none;" target="_blank">
+                <img class="logo-img" src="https://www.newindia.co.in/assets/images/NIA_logo.png" alt="The New India Assurance Co. Ltd. Logo" width="280" height="95" style="max-width: 280px; height: auto; border: 0; display: block; margin: 0 auto;">
               </a>
             </td>
           </tr>
           <!-- Content Row -->
           <tr>
             <td class="content-cell" style="padding: 20px; color: #333; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
-              <p style="margin: 0 0 10px 0;">Dear Sir/Madam,</p>
-              <p style="margin: 0 0 10px 0;">[Write your message content here]</p>
-              <p style="margin: 0;">Regards,<br>The New India Assurance Co. Ltd.</p>
+              <br>
             </td>
           </tr>
           <!-- Footer Row -->
           <tr>
             <td class="footer-cell" style="background-color: #f4f4f4; padding: 20px; font-size: 14px; color: #555; text-align: center;">
               <p class="product-section-legend-text" style="font-weight: 600; font-family: Poppins, sans-serif; color: #083f83; margin-top:0; margin-bottom: 15px; font-size: 16px; text-align:center;">What Are You Securing Today?</p>
-              
+
               <!-- Insurance Icons Table -->
               <table class="insurance_icons_table" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px; text-align:center;">
                 <tr>
                   <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
-                    <a href="https://www.newindia.co.in/portal/product/motor" style="color: #083f83; text-decoration: none;">
+                    <a href="https://www.newindia.co.in/portal/product/motor" style="color: #083f83; text-decoration: none;" target="_blank">
                       <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/motor.png" alt="Motor" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
                       <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">Motor</p>
                     </a>
                   </td>
                   <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
-                    <a href="https://www.newindia.co.in/portal/product/health" style="color: #083f83; text-decoration: none;">
+                    <a href="https://www.newindia.co.in/portal/product/health" style="color: #083f83; text-decoration: none;" target="_blank">
                       <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/health.png" alt="Health" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
                       <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">Health</p>
                     </a>
                   </td>
                   <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
-                    <a href="https://www.newindia.co.in/portal/product/travel" style="color: #083f83; text-decoration: none;">
+                    <a href="https://www.newindia.co.in/portal/product/travel" style="color: #083f83; text-decoration: none;" target="_blank">
                       <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/travel.png" alt="Travel" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
                       <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">Travel</p>
                     </a>
                   </td>
                   <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
-                    <a href="https://www.newindia.co.in/portal/product/miscellaneous" style="color: #083f83; text-decoration: none;">
+                    <a href="https://www.newindia.co.in/portal/product/miscellaneous" style="color: #083f83; text-decoration: none;" target="_blank">
                       <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/misc.png" alt="Miscellaneous" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
                       <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">Misc.</p>
                     </a>
                   </td>
                   <td class="insurance-icon-cell" align="center" style="padding: 0 5px;">
-                    <a href="https://www.newindia.co.in/portal/product/all" style="color: #083f83; text-decoration: none;">
+                    <a href="https://www.newindia.co.in/portal/product/all" style="color: #083f83; text-decoration: none;" target="_blank">
                       <img class="insurance-icon-img" src="https://www.newindia.co.in/assets/images/icons/homepage/allprod.png" alt="All Products" width="51" height="51" style="margin-bottom: 5px; border:0;"><br>
                       <p class="insurance-icon-text" style="margin: 0; font-weight: bold; font-size: 14px; color: #000; text-decoration: none;">All Products</p>
                     </a>
@@ -148,27 +146,30 @@
               <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom:20px; text-align:center;">
                 <tr>
                   <td align="center" style="padding: 0 3px;">
-                    <a href="https://www.facebook.com/thenewindiaassurance"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" height="24" style="border:0; display:block;"></a>
+                    <a href="https://www.facebook.com/NewIndAssurance/" target="_blank"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="28" height="28" style="border:0; display:block;"></a>
                   </td>
                   <td align="center" style="padding: 0 3px;">
-                    <a href="https://twitter.com/NewIndAssurance"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24" height="24" style="border:0; display:block;"></a>
+                    <a href="https://x.com/NewIndAssurance" target="_blank"><img class="social-icon-img" src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/1227/X-1024.png" alt="X (formerly Twitter)" width="28" height="28" style="border:0; display:block;"></a>
                   </td>
                   <td align="center" style="padding: 0 3px;">
-                    <a href="https://www.instagram.com/thenewindiaassurance/"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="24" height="24" style="border:0; display:block;"></a>
+                    <a href="https://www.instagram.com/newindassurance/" target="_blank"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="28" height="28" style="border:0; display:block;"></a>
                   </td>
                   <td align="center" style="padding: 0 3px;">
-                    <a href="https://www.linkedin.com/company/the-new-india-assurance-co-ltd-/"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="24" height="24" style="border:0; display:block;"></a>
+                    <a href="https://www.linkedin.com/company/newindassurance/" target="_blank"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" width="28" height="28" style="border:0; display:block;"></a>
                   </td>
                   <td align="center" style="padding: 0 3px;">
-                    <a href="https://www.youtube.com/channel/UCZJuDCfxqfHKzAGGrRB7ofw"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="24" height="24" style="border:0; display:block;"></a>
+                    <a href="https://www.youtube.com/@NewIndAssurance" target="_blank"><img class="social-icon-img" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="28" height="28" style="border:0; display:block;"></a>
                   </td>
                   <td align="center" style="padding: 0 3px;">
-                    <a href="https://www.threads.net/@thenewindiaassurance"><img class="social-icon-img" src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/threads-512.png" alt="Threads" width="24" height="24" style="border:0; display:block;"></a>
+                    <a href="https://www.threads.net/@newindassurance" target="_blank"><img class="social-icon-img" src="https://cdn4.iconfinder.com/data/icons/threads-by-instagram/128/threads-logo-brand-sign-1024.png" alt="Threads" width="28" height="28" style="border:0; display:block;"></a>
+                  </td>
+                  <td align="center" style="padding: 0 3px;">
+                    <a href="https://api.whatsapp.com/send?phone=919833319191" target="_blank"><img class="social-icon-img" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-1024.png" alt="WhatsApp" width="28" height="28" style="border:0; display:block;"></a>
                   </td>
                 </tr>
               </table>
 
-              <p style="margin-top: 20px; margin-bottom: 20px; font-size: 12px; color: #555;">Visit us: <a href="https://www.newindia.co.in" style="color: #002e6d; text-decoration: none;">www.newindia.co.in</a></p>
+              <p style="margin-top: 20px; margin-bottom: 20px; font-size: 12px; color: #555;">Visit us: <a href="https://www.newindia.co.in" style="color: #002e6d; text-decoration: none;" target="_blank">www.newindia.co.in</a></p>
 
               <div class="footer-details" style="margin-top: 20px; font-size: 10px; color: #555; line-height: 1.5; text-align:center;">
                 <p style="margin:0 0 5px 0;">Registered Office Address: The New India Assurance Co. Ltd., #87, M.G.Road, Fort, Mumbai 400 001.</p>
