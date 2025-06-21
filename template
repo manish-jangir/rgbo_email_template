@@ -27,7 +27,7 @@
          font-size: 1.1em !important; /* Adjust legend font size */
       }
       .insurance_icons_table td { /* Stack insurance product icons */
-        display: block !important;
+        display: block !important; 
         width: 100% !important; /* Make cell full width to stack */
         padding: 8px 0 !important; /* Adjust padding for stacked items */
         text-align: center !important;
@@ -63,12 +63,12 @@
         padding: 10px 5px !important; /* Further reduce padding */
       }
       .social-icon-img { /* Make social icons a bit larger for easier tapping */
-        width: 32px !important;
+        width: 32px !important; 
         height: 32px !important;
         margin: 0 2px !important; /* Adjust spacing if needed */
       }
        .insurance_icons_table td { /* Adjust padding for very small screens */
-        padding: 10px 0 !important;
+        padding: 10px 0 !important; 
       }
       .product-section-legend-text {
          font-size: 1em !important; /* Further adjust legend font size */
@@ -107,7 +107,7 @@
           <tr>
             <td class="footer-cell" style="background-color: #f4f4f4; padding: 20px; font-size: 14px; color: #555; text-align: center;">
               <p class="product-section-legend-text" style="font-weight: 600; font-family: Poppins, sans-serif; color: #083f83; margin-top:0; margin-bottom: 15px; font-size: 16px; text-align:center;">What Are You Securing Today?</p>
-
+              
               <!-- Insurance Icons Table -->
               <table class="insurance_icons_table" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px; text-align:center;">
                 <tr>
