@@ -29,14 +29,11 @@
     }
 
     .logo {
-      max-width: 120px;
+      max-width: 200px; /* Adjusted for new logo dimensions */
+      height: auto; /* Maintain aspect ratio */
     }
 
-    .company-name {
-      color: #ffffff;
-      font-size: 18px;
-      margin: 10px 0 0 0;
-    }
+    /* .company-name rules removed as element is no longer present */
 
     .content {
       padding: 20px 0;
@@ -87,8 +84,98 @@
 
     .social-icons a img {
       width: 24px;
+      height: 24px; /* Ensure height is also set for better scaling */
       margin: 0 5px;
     }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 600px) {
+      .container {
+        width: 100% !important;
+        padding: 10px !important;
+        border: none !important; /* Remove border on small screens if desired */
+      }
+
+      .header {
+        padding: 10px;
+      }
+
+      .logo {
+        max-width: 160px; /* Adjusted for new logo on medium screens */
+      }
+
+      /* .company-name rules removed */
+
+      .content {
+        padding: 15px 0;
+      }
+
+      .insurance_icons {
+        flex-direction: row; /* Keep as row but allow wrapping */
+        justify-content: space-around; /* Better spacing for wrapped items */
+        gap: 15px; /* Adjust gap */
+      }
+
+      .insurance_icons li {
+        width: 75px; /* Adjust width for better wrapping */
+      }
+
+      .insurance_icons img {
+        width: 40px; /* Smaller icons on mobile */
+        height: 40px;
+      }
+
+      .insurance_icons p {
+        font-size: 12px; /* Smaller text for icons */
+      }
+
+      .footer {
+        padding: 15px;
+        font-size: 12px;
+      }
+
+      .social-icons a img {
+        width: 28px; /* Adjust social icon size for mobile if they are too small/large */
+        height: 28px;
+        margin: 0 3px; /* Adjust margin */
+      }
+
+      .product-section legend {
+        font-size: 1.1em; /* Adjust legend font size */
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .logo {
+        max-width: 140px; /* Further adjust logo for very small screens */
+      }
+      .insurance_icons {
+         flex-direction: column; /* Stack them for very small screens */
+         align-items: center;
+      }
+      .insurance_icons li {
+        width: 100%; /* Full width when stacked */
+        margin-bottom: 10px;
+      }
+       .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .social-icons a img {
+        width: 32px;
+        height: 32px;
+        margin: 5px;
+      }
+      .header a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none; /* Remove underline from link */
+      }
+    }
+
   </style>
 </head>
 
@@ -96,8 +183,7 @@
   <div class="container">
     <div class="header">
       <a href="https://www.newindia.co.in">
-        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/65/New_India_Assurance.svg" alt="New India Assurance Logo">
-        <h2 class="company-name">The New India Assurance Co. Ltd.</h2>
+        <img class="logo" src="https://www.newindia.co.in/assets/images/NIA_logo.png" alt="The New India Assurance Co. Ltd. Logo">
       </a>
     </div>
 
@@ -117,19 +203,19 @@
               <img src="https://www.newindia.co.in/assets/images/icons/homepage/motor.png" alt="Motor">
               <p>Motor</p>
             </a></li>
-          <li><a href="https://www.newindia.co.in/portal/product/health">
+          <li><a href="https://www.newindia.co.in/portal/product/health" style="color: #083f83; text-decoration: none;">
               <img src="https://www.newindia.co.in/assets/images/icons/homepage/health.png" alt="Health">
               <p>Health</p>
             </a></li>
-          <li><a href="https://www.newindia.co.in/portal/product/travel">
+          <li><a href="https://www.newindia.co.in/portal/product/travel" style="color: #083f83; text-decoration: none;">
               <img src="https://www.newindia.co.in/assets/images/icons/homepage/travel.png" alt="Travel">
               <p>Travel</p>
             </a></li>
-          <li><a href="https://www.newindia.co.in/portal/product/miscellaneous">
+          <li><a href="https://www.newindia.co.in/portal/product/miscellaneous" style="color: #083f83; text-decoration: none;">
               <img src="https://www.newindia.co.in/assets/images/icons/homepage/misc.png" alt="Miscellaneous">
               <p>Misc.</p>
             </a></li>
-          <li><a href="https://www.newindia.co.in/portal/product/all">
+          <li><a href="https://www.newindia.co.in/portal/product/all" style="color: #083f83; text-decoration: none;">
               <img src="https://www.newindia.co.in/assets/images/icons/homepage/allprod.png" alt="All Products">
               <p>All Products</p>
             </a></li>
@@ -157,7 +243,14 @@
         </a>
       </div>
 
-      <p style="margin-top: 20px;">Visit us: <a href="https://www.newindia.co.in">www.newindia.co.in</a></p>
+      <p style="margin-top: 20px;">Visit us: <a href="https://www.newindia.co.in" style="color: #002e6d;">www.newindia.co.in</a></p>
+
+      <div class="footer-details" style="margin-top: 20px; font-size: 10px; color: #555; line-height: 1.5;">
+        <p>Registered Office Address: The New India Assurance Co. Ltd., #87, M.G.Road, Fort, Mumbai 400 001.</p>
+        <p>CIN Number: L66000MH1919GOI000526 | IRDAI Registration Number: 190</p>
+        <p>'Insurance Is The Subject Matter Of Solicitation'</p>
+        <p>© 2024 The New India Assurance Co Ltd. All Rights Reserved.</p>
+      </div>
     </div>
   </div>
 </body>
